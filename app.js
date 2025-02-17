@@ -11,7 +11,7 @@ app.get("/",(req,res)=>{
     res.send("Welcome to NodeJs API Project")
 })
 
-app.get('/helo',(req,res)=>{
+app.get('/hello',(req,res)=>{
     res.send("Hello World!")
 })
 
