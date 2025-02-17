@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+  nodeapi:
+    build: ./
+    ports:
+      - "9010:9010"
+    container_name: Node-Apis
+
+  webapp:
+    build: ../test-app/
+    ports:
+      - "5173:5173"
+    container_name: WebApp
