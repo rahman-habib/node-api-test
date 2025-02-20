@@ -18,7 +18,8 @@ app.get("/hello", (req, res) => {
     res.send("Hello World! I am here");
 });
 
-app.get("/get", async (req, res) => {
+app.get("/get", async (req, res) => {  
+    
     try {
         let response = await axios.get("https://baconipsum.com/api/?type=meat-and-filler");
         res.json(response.data); // Send API response to the client
